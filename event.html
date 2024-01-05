@@ -8,3 +8,55 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
+<body class="bg-primary"></body>
+<!--- NAVBAR -->
+<div class="container-fluid p-0">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="index.html">
+          <img class="logo ml-5 p-0" src="assets/PetitLogoBlizaar.svg" alt="logo de l'association">
+      </a>
+      <!--- BURGER -->
+      <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"
+          onclick="toggleIcon(this)">
+          <span></span>
+          <span></span>
+          <span></span>
+      </button>
+      <!--- FIN BURGER -->
+      <div class="collapse navbar-collapse d-flex-sm justify-content-center" id="navbarNav">
+        <ul class="navbar-nav order-lg-2">
+            <li class="nav-item active">
+                <a class="nav-link pl-4" href="index.html">ACCUEIL<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link pl-4" href="event.html">ÉVÉNEMENTS</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link pl-4" href="contact.html">CONTACT</a>
+            </li>
+        </ul>
+    </div>
+    <a href="#"><img class="facebook reseaux d-none d-lg-block" src="assets/facebook_4494475.png"
+            alt="logo du lien facebook"></a>
+    <a href="#"><img class="linkedin reseaux ml-3 d-none d-lg-block" src="assets/linkedin_4494497.png"
+            alt="logo du lien linkedin"></a>
+    <a href="#"><img class="instagram reseaux ml-3 d-none d-lg-block" src="assets/instagram_4494488.png"
+            alt="logo du lien instagram"></a>
+</nav>
+</div>
+<!--- FIN NAVBAR -->
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+    function toggleIcon(button) {
+        const icon = button.querySelectorAll('span');
+        button.classList.toggle('collapsed');
+        icon.forEach(span => span.classList.toggle('collapsed'));
+    }
+</script>
+</body>
+</html>
