@@ -1,0 +1,144 @@
+/* Burger */
+.navbar-toggler-icon {
+  transition: transform 0.4s;
+}
+
+.navbar-toggler span {
+  display: block;
+  background-color: #fff;
+  height: 3px;
+  width: 25px;
+  margin-bottom: 5px;
+  transition: all 0.4s;
+}
+
+.navbar-toggler:not(.collapsed) span:nth-child(2) {
+  opacity: 0;
+}
+
+.navbar-toggler:not(.collapsed) span:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.navbar-toggler:not(.collapsed) span:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+/* Navbar */
+.logo {
+  width: 100px;
+}
+
+ul li a {
+  font-size: 1.2rem;
+}
+
+p {
+  font-size: 1.2rem;
+}
+
+@keyframes h1 {
+  100% {
+    transform: translateX(0);
+  }
+}
+
+h1 {
+  animation: h1 1s ease-in .3s 1 normal forwards;
+  transform: translateX(-900px);
+}
+
+@keyframes h2 {
+  0% {
+    width: 100%;
+  }
+
+  100% {
+    width: 0;
+  }
+}
+
+h2 {
+  position: relative;
+  padding-bottom: 1px;
+  /* À cause de l'animation du pseudo-élément::after*/
+}
+
+h2::after {
+  content: '';
+  position: absolute;
+  background-color: #007BFF;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 5;
+  animation: h2 1s ease-in 1.3s 1 normal forwards;
+}
+
+h5 {
+  color: orangered;
+}
+hr {
+  background-color: yellow;
+}
+
+.total-container {
+  background-color: rgb(246, 249, 161);
+}
+
+.buro {
+  transition: .3s ease-in-out;
+}
+
+.buro:hover {
+  filter: grayscale(1);
+}
+
+@media screen and (max-width: 1570px) {
+  .taches {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1750px) {
+  .cartes {
+    display: none;
+  }
+}
+
+.taches,
+.cartes,
+.flyers {
+  height: 350px;
+  position: absolute;
+  left: 0;
+  z-index: -1;
+}
+
+@media screen and (max-width: 1650px) {
+  .flyers {
+    display: none;
+  }
+}
+
+.flyers {
+  height: 250px;
+  transform: rotate(-12deg);
+}
+
+.facebook,
+.instagram,
+.linkedin {
+  height: 30px;
+}
+
+.reseaux:hover {
+  transform: scale(1.1);
+}
+
+#inputPrenom:focus,
+#inputNom:focus,
+#inputEmail:focus,
+#inputMessage:focus {
+  background-color: aqua;
+}

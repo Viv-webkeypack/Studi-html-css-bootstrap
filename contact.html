@@ -2,65 +2,102 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Projet Studi HTML/CSS/Bootstrap</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Projet Studi HTML/CSS/Bootstrap</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-primary"></body>
-<!--- NAVBAR -->
-<header class="container-fluid p-0">
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <a class="navbar-brand" href="index.html">
-          <img class="logo ml-5 p-0" src="assets/PetitLogoBlizaar.svg" alt="logo de l'association">
+
+<body class="bg-primary">
+  <header class="container-fluid p-0">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand ml-5" href="index.html">
+        <img class="logo" src="assets/PetitLogoBlizaar.svg" alt="logo de l'association">
       </a>
-      <!--- BURGER -->
       <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"
-          onclick="toggleIcon(this)">
-          <span></span>
-          <span></span>
-          <span></span>
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" onclick="toggleIcon(this)">
+        <span></span>
+        <span></span>
+        <span></span>
       </button>
-      <!--- FIN BURGER -->
       <div class="collapse navbar-collapse d-flex-sm justify-content-center" id="navbarNav">
         <ul class="navbar-nav order-lg-2">
-            <li class="nav-item active">
-                <a class="nav-link pl-4" href="index.html">ACCUEIL<span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link pl-4" href="event.html">ÉVÉNEMENTS</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link pl-4" href="contact.html">CONTACT</a>
-            </li>
+          <li class="nav-item">
+            <a class="nav-link pl-4" href="index.html">ACCUEIL </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link pl-4" href="event.html">ÉVÉNEMENTS</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link pl-4" href="contact.html">CONTACT<span class="sr-only">(current)</span></a>
+          </li>
         </ul>
-    </div>
-    <a href="#"><img class="facebook reseaux d-none d-lg-block" src="assets/facebook_4494475.png"
-            alt="logo du lien facebook"></a>
-    <a href="#"><img class="linkedin reseaux ml-3 d-none d-lg-block" src="assets/linkedin_4494497.png"
-            alt="logo du lien linkedin"></a>
-    <a href="#"><img class="instagram reseaux ml-3 d-none d-lg-block" src="assets/instagram_4494488.png"
-            alt="logo du lien instagram"></a>
-</nav>
-</header>
-<!--- FIN NAVBAR -->
-
-<footer class="fixed-bottom">
-  <div class="footer bg-dark text-white text-center p-2">
-      Association BLIZAAR - Siren 493028047 - Création du site web : vivian Mingaud©2023 / Webkeypack.com
-  </div>
-</footer>
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-<script>
-    function toggleIcon(button) {
-        const icon = button.querySelectorAll('span');
-        button.classList.toggle('collapsed');
-        icon.forEach(span => span.classList.toggle('collapsed'));
-    }
-</script>
+      </div>
+      <a href="#"><img class="facebook reseaux d-none d-lg-block" src="assets/facebook_4494475.png"
+          alt="logo du lien facebook"></a>
+      <a href="#"><img class="linkedin reseaux ml-3 d-none d-lg-block" src="assets/linkedin_4494497.png"
+          alt="logo du lien linkedin"></a>
+      <a href="#"><img class="instagram reseaux ml-3 d-none d-lg-block" src="assets/instagram_4494488.png"
+          alt="logo du lien instagram"></a>
+    </nav>
+  </header>
+  <img class="cartes" src="assets/CarteDeVisiteBlizaar@4x.png" alt="image de cartes de visite superposées">
+  <div class="container text-center">
+    <div class="text-container text-left mr-4">
+      <h1 class="mt-3 bg-dark d-inline-block p-2 border border-primary rounded text-warning">Contact</h1>
+      <h2>Remplissez ce formulaire afin que nous vous recontactions</h2>
+      <hr>
+      <p class="text-white">Pour nous contacter, veuillez remplir les champs de ce formulaire, nous
+        répondrons sous 24h. Que vous soyez client ou collaborateur pour nos futurs projets d'exposition, nous
+        serons à l'écoute de toutes vos demandes. Vous pouvez également nous suivre via les réseaux sociaux</p>
+      <hr>
+      <div class="container global-container col-lg-10 d-flex justify-content-center mb-5">
+        <form class="border rounded p-3 px-5 bg-dark text-white mb-5">
+          <div class="form-row pt-5">
+            <div class="form-group col-md-6">
+              <label for="inputNom">Nom</label>
+              <input type="text" class="form-control" id="inputNom" placeholder="Votre nom">
+            </div>
+            <div class="form-group col-md-6">
+              <label for="inputPrenom">Prénom</label>
+              <input type="text" class="form-control" id="inputPrenom" placeholder="Votre prénom">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="inputEmail">Adresse mail</label>
+            <input type="email" class="form-control" id="inputEmail" placeholder="nom@exemple.com">
+          </div>
+          <div class="form-group">
+            <label for="inputMessage">Votre message</label>
+            <textarea class="form-control" id="inputMessage" rows="4"></textarea>
+          </div>
+          <button type="submit" class="bg-success btn-primary p-2 px-3 mr-5 border rounded d-inline">Envoyer</button>
+          <div class="reseaux-container d-inline-block ml-5 mt-5">
+            <a href="#"><img class="facebook reseaux d-lg-none d-sm-inline-block" src="assets/facebook_4494475.png"
+                alt="logo du lien facebook"></a>
+            <a href="#"><img class="linkedin reseaux ml-3 d-lg-none d-sm-inline-block" src="assets/linkedin_4494497.png"
+                alt="logo du lien linkedin"></a>
+            <a href="#"><img class="instagram reseaux ml-3 d-lg-none d-sm-inline-block"
+                src="assets/instagram_4494488.png" alt="logo du lien instagram"></a>
+          </div>
+        </form>
+      </div>
+      <footer class="container-fluid p-0 fixed-bottom">
+        <div class="footer bg-dark text-white text-center p-2">
+          Association BLIZAAR - Siren 493028047 - Création du site web : vivian Mingaud©2023 / Webkeypack.com
+        </div>
+      </footer>
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+      <script>
+        function toggleIcon(button) {
+          const icon = button.querySelectorAll('span');
+          button.classList.toggle('collapsed');
+          icon.forEach(span => span.classList.toggle('collapsed'));
+        }
+      </script>
 </body>
+
 </html>
